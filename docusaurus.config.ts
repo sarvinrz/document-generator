@@ -31,25 +31,24 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fa',
-    locales: ['fa', 'en'],
-    localeConfigs: {
-      fa: {
-        label: 'فارسی',
-        direction: 'rtl',
-        htmlLang: 'fa-IR',
-        calendar: 'persian',
-        path: 'fa',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregorian',
-        path: 'en',
-      },
+  defaultLocale: 'fa',
+  locales: ['fa', 'en'],
+  localeConfigs: {
+    fa: {
+      label: 'فارسی',
+      direction: 'rtl',
+      htmlLang: 'fa-IR',
+      path: 'fa',
+    },
+    en: {
+      label: 'English',
+      direction: 'ltr',
+      htmlLang: 'en-US',
+      path: 'en',
     },
   },
+},
+
 
   presets: [
     [
@@ -135,19 +134,19 @@ const config: Config = {
           label: 'عیب‌یابی',
         },
         {to: '/blog', label: 'بلاگ', position: 'left'},
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
         {
           type: 'search',
           position: 'right',
         },
-        {
-          href: 'https://github.com/your-org/support-docs',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/your-org/support-docs',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
