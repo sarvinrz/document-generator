@@ -236,7 +236,7 @@ tickets = api.tickets.list()
 
 ### Postman Collection
 
-مجموعه Postman را از [اینجا](/api/postman-collection.json) دانلود کنید.
+مجموعه Postman در آینده اضافه خواهد شد.
 
 ### cURL Examples
 
