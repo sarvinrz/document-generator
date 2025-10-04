@@ -14,6 +14,17 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // Algolia site verification meta tag
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'BA2B14EB617819F0',
+      },
+    },
+  ],
+
   // Set the production url of your site here
   url: 'https://support-docs.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -112,7 +123,7 @@ const config: Config = {
       logo: {
         alt: 'لوگوی سیستم پشتیبانی',
         src: 'img/logo.svg',
-        srcDark: 'img/logo-dark.svg',
+        srcDark: 'img/logo.svg',
       },
       items: [
         {
