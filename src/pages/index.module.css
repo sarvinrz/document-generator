@@ -1,0 +1,149 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.features {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.feature-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.feature-card__description {
+  color: #666;
+  line-height: 1.6;
+}
+
+[data-theme='dark'] .feature-card {
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .feature-card__description {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.cta {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+  text-align: center;
+}
+
+[data-theme='dark'] .cta {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* RTL Support */
+[dir="rtl"] .heroBanner {
+  text-align: center;
+}
+
+[dir="rtl"] .feature-card {
+  text-align: center;
+}
+
+[dir="rtl"] .cta {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 996px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .cta {
+    padding: 2rem 0;
+  }
+  
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 2rem 1rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .feature-card__icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card__title {
+    font-size: 1.3rem;
+  }
+}
