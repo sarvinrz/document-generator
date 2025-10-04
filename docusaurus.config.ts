@@ -123,7 +123,7 @@ const config: Config = {
       logo: {
         alt: 'لوگوی سیستم پشتیبانی',
         src: 'img/logo.svg',
-        srcDark: 'img/logo.svg',
+        srcDark: 'img/logo.svg'
       },
       items: [
         {
