@@ -220,15 +220,15 @@ const config: Config = {
     // Algolia search configuration
     algolia: {
       // The application ID provided by Algolia
-      appId: 'GHA56T1QKU',
+      appId: 'VX155825PB',
       
       // Public API key: it is safe to commit it
-      apiKey: 'c915b4531b96c274dd7a2a065dc20359',
+      apiKey: 'eb4854ef0a8c97e18db98d7dd2c2070a',
       
       indexName: 'support-docs',
       
       // Optional: see https://docusaurus.io/docs/search#using-the-search-page
-      contextualSearch: true,
+      contextualSearch: false,
       
       // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
       externalUrlRegex: 'external\\.com|domain\\.com',
@@ -238,6 +238,9 @@ const config: Config = {
       
       // Optional: path for search page that enabled by default (`false` to disable it)
       searchPagePath: 'search',
+      
+      // Persian placeholder for search
+      placeholder: 'جستجو در مستندات...',
     },
     prism: {
       theme: prismThemes.github,
